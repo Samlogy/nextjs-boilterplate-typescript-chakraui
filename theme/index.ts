@@ -1,5 +1,4 @@
 import { extendTheme } from "@chakra-ui/react";
-import { StepsStyleConfig as Steps } from 'chakra-ui-steps';
 
 import { colors, breakpoints, fonts } from "./utilities";
 
@@ -8,7 +7,7 @@ const theme = extendTheme({
     breakpoints,
     fonts,
     components: {
-        Steps
+        // Steps
     },
 });
 
