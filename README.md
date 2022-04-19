@@ -33,4 +33,6 @@ yarn test
 
 to for ejecting:
 
-### `yarn eject`
+```bash
+yarn eject
+```
