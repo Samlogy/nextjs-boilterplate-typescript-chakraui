@@ -6,18 +6,15 @@ First, run the development server:
 yarn dev
 ```
 
-
 ### Tech Stack:
 
 1. next v12+
 2. Typescript
 3. chakra-ui --> layout
-4. grapQL / apollo client --> graphQL api
-5. zustand --> store
-6. react-hook-form v7+ & yup --> (form validation)
-7. react dom router v6 --> routing
-8. react icons --> assests (icons)
-9. eslint + prettier setup --> configure it according to guidelines
+4. zustand --> store
+5. react-hook-form v7+ & yup --> (form validation)
+6. react icons --> assests (icons)
+7. eslint + prettier setup --> configure it according to guidelines
 
 to for building:
 
