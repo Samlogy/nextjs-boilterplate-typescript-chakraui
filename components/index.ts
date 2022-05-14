@@ -1,1 +1,23 @@
-export { default as Layout} from "./Layout"
+export { default as Layout } from './Layout'
+export { default as Hero } from './Hero'
+export { default as TechStack } from './TechStack'
+export { default as SectionWrapper } from './SectionWrapper'
+export { default as Services } from './Services'
+export { default as Testimonials } from './Testimonials'
+export { default as About } from './About'
+
+export { default as Blogs } from './Blogs'
+export { default as NavBar } from './NavBar'
+export { default as Footer } from './Footer'
+export { default as Contact } from './Contact'
+export { default as Projects } from './Projects'
+export { default as ErrorMessage } from './ErrorMessage'
+export { default as TypeWritter } from './TypeWritter'
+
+export { default as PageTemplate } from './PageTemplate'
+export { default as Blog } from './Blog'
+export { default as BackTop } from './BackTop'
+export { default as LanguageSwitcher } from './LanguageSwitcher'
+export { default as CallToAction } from './CallToAction'
+
+export { default as ScrollProgressIndicator } from './ScrollProgressIndicator'
