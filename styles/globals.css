@@ -1,16 +1,57 @@
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  scroll-behavior: smooth;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background: hsl(152, 4%, 53%);
 }
 
-* {
-  box-sizing: border-box;
+::-webkit-scrollbar-thumb {
+  background: hsl(152, 4%, 29%);
+  border-radius: 0.5rem;
 }
+
+/*=============== language switcher ===============*/
+select.select-language {
+  background-color: transparent;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: .5rem .25rem;
+  transition: all .25s;
+}
+select.select-language option {
+  background-color: white;
+  color: #38a169
+}
+select.select-language:hover {
+  cursor: pointer;
+}
+/* select language dark mode */
+select.select-language:hover.dark {
+  cursor: pointer;
+  background-color: #2d3748;
+  color: white;
+}
+
+.post-link:hover {
+  cursor: pointer;
+}
+.call-to-action-link {
+  background-color: #38a169;
+  padding: .5rem;
+  border-radius: 5px;
+  color:white!important;
+  transition: all .2s;
+  width: 15rem;
+  text-align: center;
+  font-weight: 600;  
+}
+.call-to-action-link:hover {
+  background-color: #48bb78;
+  text-decoration: none!important;
+}
+
