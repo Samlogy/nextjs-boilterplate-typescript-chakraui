@@ -21,7 +21,6 @@ const Hero = () => {
         justifyContent={'center'}
         w={['30rem', '', '25rem', '']}
       >
-
         <Heading mb="2rem">
           Agence de développement{' '}
           <Box as="span" color="accent_4">
@@ -34,9 +33,8 @@ const Hero = () => {
           alignItems={['center', 'none']}
           ml={['0', '', '2rem', '']}
         >
-
           <Button w="fit-content" bg="accent_4" color="white" _hover={{ bg: 'accent_5' }}>
-            Demander un devis Gratuit
+            {t.hero.ask_estimate}
           </Button>
 
           <Button
@@ -48,7 +46,9 @@ const Hero = () => {
             ml={['0rem', '1rem']}
             leftIcon={<AiFillPhone />}
           >
-            <Link href="tel:540498180"> {t.hero.call_us} </Link>
+            <Link href="tel:540498180">
+              <a>{t.hero.call_us}</a>
+            </Link>
           </Button>
         </Flex>
       </Flex>

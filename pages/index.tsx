@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import {
-  // About,
-  // Blogs,
-  // Hero,
-  Layout
-  // Projects,
-  // Services,
-  // TechStack,
-  // Testimonials
+  About,
+  Blogs,
+  Hero,
+  Layout,
+  Projects,
+  Services,
+  TechStack,
+  Testimonials
 } from '../components'
 import { GET_HOME_DATA } from '../lib/services'
 
@@ -25,14 +25,13 @@ export default function Home({ about, techStack, services, reviews, projects, bl
       </Head>
 
       <Layout isHeaderVisible isFooterVisible>
-        home
-        {/* <Hero />
+        <Hero />
         <About data={about} />
         <Services data={services} />
         {techStack && <TechStack data={techStack} />}
         <Projects data={projects} />
         <Testimonials data={reviews} />
-        <Blogs data={blogs} /> */}
+        <Blogs data={blogs} />
       </Layout>
     </>
   )
