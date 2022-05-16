@@ -45,7 +45,14 @@ const Blog = ({ data }: { data: any }) => {
           >
             {data.title}
           </Text>
-          <Text fontSize=".9rem" mb=".75rem" color={'gray_3'} isTruncated>
+          <Text
+            fontSize=".9rem"
+            mb=".75rem"
+            color={'gray_3'}
+            whiteSpace="nowrap"
+            overflowX="hidden"
+            textOverflow="ellipsis"
+          >
             {data.text}
           </Text>
           <Text fontWeight={'bold'} color={'accent_3'} textAlign="center">
