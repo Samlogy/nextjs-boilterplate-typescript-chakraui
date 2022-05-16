@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Container, Flex } from '@chakra-ui/react'
 
-import { NavBar, Footer, Contact, BackTop } from '../components'
+// import { BackTop } from '../components'
 interface ILayout {
   children: React.ReactNode
   isHeaderVisible?: boolean
@@ -19,15 +19,15 @@ export default function Layout({
     <>
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="description" content="Sam solutions" />
-        <meta name="og:title" content="Sam solutions" />
+        <meta name="description" content="website description" />
+        <meta name="og:title" content="website title" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title> Sam Solutions </title>
+        <title> website title </title>
       </Head>
 
       <Flex flexDir="column" {...restProps}>
-        {isHeaderVisible && <NavBar />}
-        <BackTop />
+        {/* {isHeaderVisible && <NavBar />} */}
+        {/* <BackTop /> */}
 
         <Container
           maxW="80em"
@@ -37,9 +37,8 @@ export default function Layout({
           px={['16px', '', '', '50px', '100px']}
         >
           {children}
-          <Contact />
         </Container>
-        {isFooterVisible && <Footer />}
+        {/* {isFooterVisible && <Footer />} */}
       </Flex>
     </>
   )

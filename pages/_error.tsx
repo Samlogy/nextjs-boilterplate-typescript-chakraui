@@ -1,7 +1,7 @@
 import { Heading, Text, Button } from '@chakra-ui/react'
 import Link from 'next/link'
 
-import Layout from '../components/Layout'
+import { Layout } from '../components'
 import { useLocale } from '../lib/hooks'
 
 function Error({ statusCode }: { statusCode: number }) {
@@ -20,11 +20,11 @@ function Error({ statusCode }: { statusCode: number }) {
       </Heading>
 
       <Text fontSize="26px" mt={3} mb={2}>
-        {t.NotFound.title}
+        {/* {t.NotFound.title} */}
       </Text>
 
       <Text color={'gray.500'} mb={6} fontSize="18px">
-        {statusCode === 404 ? t.NotFound.text : 'Server-side error occurred'}
+        {/* {statusCode === 404 ? t.NotFound.text : 'Server-side error occurred'} */}
       </Text>
 
       <Link href="/" passHref>
@@ -34,7 +34,7 @@ function Error({ statusCode }: { statusCode: number }) {
           color="white"
           variant="solid"
         >
-          {t.NotFound.button}
+          {/* {t.NotFound.button} */}
         </Button>
       </Link>
     </Layout>
