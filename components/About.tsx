@@ -1,5 +1,5 @@
 import { Flex, Heading, Image, Text } from '@chakra-ui/react'
-import SectionWrapper from './SectionWrapper'
+import { SectionWrapper, CallToAction } from './'
 import { useLocale } from '../lib/hooks'
 
 const About = ({ data }: { data: any }) => {
@@ -26,6 +26,8 @@ const About = ({ data }: { data: any }) => {
               </Text>
             ))}
           </Flex>
+
+          <CallToAction />
         </Flex>
       </Flex>
     </SectionWrapper>

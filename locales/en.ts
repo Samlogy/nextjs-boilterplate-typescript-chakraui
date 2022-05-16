@@ -1,12 +1,13 @@
 const en = {
   globals: {
-    call_to_action: 'Start your business now !'
+    call_to_action: 'Start your business now !',
+    learn_more: 'Learn More'
   },
   menu: {
     home: 'Home',
-    services: 'Services',
-    blogs: 'Blogs',
-    contacts: 'Contactez us'
+    services: 'Our Services',
+    blogs: 'Our Blogs',
+    contacts: 'Contact us'
   },
   hero: {
     title: 'Developement Agency',
@@ -43,7 +44,7 @@ const en = {
     description: '',
     text: ''
   },
-  contact: {
+  contacts: {
     title: 'CONTACT US',
     description:
       'If you have any questions, or other requests feel free to contact us! We are always happy to hear from you!',

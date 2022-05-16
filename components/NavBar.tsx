@@ -1,6 +1,6 @@
 import { Box, Button, Flex, Stack } from '@chakra-ui/react'
 import Link from 'next/link'
-import { useRouter } from "next/router"
+import { useRouter } from 'next/router'
 import React, { useState } from 'react'
 import { MdMenu, MdOutlineClose } from 'react-icons/md'
 import { useLocale } from '../lib/hooks'
@@ -10,7 +10,7 @@ import LanguageSwitcher from './LanguageSwitcher'
 interface IMenuItem {
   children: any
   to: any
-  rest?: any
+  [restProps: string]: any
 }
 interface IMenuToggle {
   toggle: any
@@ -45,14 +45,14 @@ const MenuToggle = ({ toggle, isOpen }: IMenuToggle) => {
   )
 }
 
-const MenuItem = ({ children, to = '/', ...rest }: IMenuItem) => {
+const MenuItem = ({ children, to = '/', ...restProps }: IMenuItem) => {
   return (
     <Box
       display="block"
       textAlign={'center'}
-      minW="5rem"
+      minW="8rem"
       ml=".5rem!important"
-      {...rest}
+      {...restProps}
       _hover={{ textDecor: 'underline', fontWeight: '600' }}
     >
       <Link href={to}>{children}</Link>
@@ -101,7 +101,9 @@ const MenuLinks = ({ isOpen }: { isOpen: boolean }) => {
           minW="5rem"
           ml=".5rem!important"
         >
-          <Link href={'#contact'}>{t.menu.contacts}</Link>
+          <Link href={'#contact'}>
+            <a>{t.menu.contacts}</a>
+          </Link>
         </Box>
 
         <LanguageSwitcher />

@@ -70,7 +70,7 @@ const socialMedia = [
   }
 ]
 
-export default function contact() {
+export default function Contact() {
   const {
     register,
     handleSubmit,
@@ -78,12 +78,11 @@ export default function contact() {
   } = useForm({
     resolver: yupResolver(contactSchema)
   })
+  const { t } = useLocale()
 
   const toast = useToast()
 
   const onContact = async (contact: any) => {
-    console.log(contact)
-    // api call
     const res = await CONTACT(contact)
     if (res) {
       toast({
@@ -113,7 +112,7 @@ export default function contact() {
   const inputColor = useColorModeValue('white', 'gray_3')
 
   return (
-    <SectionWrapper title="Contact Us" id="contact">
+    <SectionWrapper title={t.contacts.title} id="contact">
       <Flex
         flexDir={'row'}
         flexWrap={'wrap'}
@@ -131,8 +130,7 @@ export default function contact() {
           flexBasis={'40%'}
         >
           <Text color={textColor} fontSize={'1rem'} maxW="20rem">
-            If you have any questions, or other requests feel free to contact us! We are always
-            happy to hear from you!
+            {t.contacts.description}
           </Text>
 
           <Flex
@@ -192,7 +190,7 @@ export default function contact() {
           <form onSubmit={handleSubmit(onContact)}>
             <FormControl id="name" mb="1rem">
               <FormLabel>
-                Your Name
+                {t.contacts.name}
                 {/* <Box as="span" color="gray_4" fontSize=".85rem" ml=".15rem" fontStyle={'italic'}>
                     (Optional)
                   </Box> */}
@@ -215,9 +213,9 @@ export default function contact() {
               {errors.name && <ErrorMessage error={errors.name.message} />}
             </FormControl>
 
-            <FormControl id="name" mb="1rem">
+            <FormControl id="company" mb="1rem">
               <FormLabel>
-                Company
+                {t.contacts.company}
                 {/* <Box as="span" color="gray_4" fontSize=".85rem" ml=".15rem" fontStyle={'italic'}>
                     (Optional)
                   </Box> */}
@@ -240,8 +238,8 @@ export default function contact() {
               {errors.company && <ErrorMessage error={errors.company.message} />}
             </FormControl>
 
-            <FormControl id="name" mb="1rem">
-              <FormLabel> Email </FormLabel>
+            <FormControl id="email" mb="1rem">
+              <FormLabel> {t.contacts.email} </FormLabel>
               <InputGroup>
                 <InputLeftElement pointerEvents="none">
                   <MdOutlineEmail color="gray_1" />
@@ -261,7 +259,7 @@ export default function contact() {
             </FormControl>
 
             <FormControl id="phone" mb="1rem">
-              <FormLabel> Phone Number </FormLabel>
+              <FormLabel> {t.contacts.phone} </FormLabel>
               <InputGroup>
                 <InputLeftElement pointerEvents="none">
                   <MdOutlineEmail color="gray_1" />
@@ -280,8 +278,8 @@ export default function contact() {
               {errors.phone && <ErrorMessage error={errors.phone.message} />}
             </FormControl>
 
-            <FormControl id="name" mb="1rem">
-              <FormLabel> Message </FormLabel>
+            <FormControl id="message" mb="1rem">
+              <FormLabel> {t.contacts.message} </FormLabel>
               <Textarea
                 placeholder="message"
                 isInvalid={errors.message ? true : false}
@@ -295,9 +293,9 @@ export default function contact() {
               {errors.message && <ErrorMessage error={errors.message.message} />}
             </FormControl>
 
-            <FormControl id="name" float="right" mb=".5rem">
+            <FormControl id="send-message" float="right" mb=".5rem">
               <Button type="submit" bg="accent_4" color="white" _hover={{ bg: 'accent_3' }}>
-                Send Message
+                {t.contacts.button}
               </Button>
             </FormControl>
           </form>

@@ -5,6 +5,7 @@ import Link from 'next/link'
 import { useLocale } from '../lib/hooks'
 
 const Blog = ({ data }: { data: any }) => {
+  const { t } = useLocale()
   return (
     <Link href={`/blog/${data.id}`} passHref>
       <Flex
@@ -48,7 +49,7 @@ const Blog = ({ data }: { data: any }) => {
             {data.text}
           </Text>
           <Text fontWeight={'bold'} color={'accent_4'} textAlign="center">
-            Learn More
+            {t.globals.learn_more}
           </Text>
         </Flex>
       </Flex>

@@ -1,6 +1,7 @@
 const fr = {
   globals: {
-    call_to_action: 'démarrez votre entreprise maintenant !'
+    call_to_action: 'Démarrez votre entreprise dès maintenant !',
+    learn_more: 'En savoir plus'
   },
   menu: {
     home: 'Acceuil',
@@ -43,7 +44,7 @@ const fr = {
     description: '',
     text: ''
   },
-  contact: {
+  contacts: {
     title: 'Contactez-nous',
     description:
       "Si vous avez des questions, ou d'autres demandes, n'hésitez pas à nous contacter ! Nous sommes toujours heureux d'avoir de vos nouvelles!",
@@ -52,7 +53,7 @@ const fr = {
     email: 'Adresse mail',
     phone: 'Numéro de téléphone',
     message: 'Message',
-    button: 'envoyer le message'
+    button: 'Envoyer le message'
   },
   footer: {
     rights: 'Tous droits réservés',

@@ -1,11 +1,8 @@
-import { Flex, Box, Text, Image, Button } from '@chakra-ui/react'
-
-import Link from 'next/link'
+import { Box, Flex, Image, Text } from '@chakra-ui/react'
+import { useLocale } from '../lib/hooks'
 import { IconReview } from '../public/Icons'
 import homeImage from '../public/images/home.png'
-import { useLocale } from '../lib/hooks'
-
-import SectionWrapper from './SectionWrapper'
+import { CallToAction, SectionWrapper } from './'
 
 const Testimonials = ({ data }: { data: any }) => {
   // const bgColor = useColorModeValue('gray_9', 'gray_2')
@@ -13,15 +10,11 @@ const Testimonials = ({ data }: { data: any }) => {
   return (
     <SectionWrapper title={t.testimonials.title} description={t.testimonials.description}>
       <Flex flexDir={'row'} flexWrap="wrap" justify={'center'}>
-        {data.map((el, idx) => (
-          <Review key={idx} data={el} />
+        {data.map((review, idx) => (
+          <Review key={idx} data={review} />
         ))}
       </Flex>
-      <Flex justify={'center'} align="center" mt="2rem">
-        <Button bg={'accent_4'} color={'white'} _hover={{ bg: 'accent_5' }}>
-          <Link href="#contact">Start yout business now ! </Link>
-        </Button>
-      </Flex>
+      <CallToAction />
     </SectionWrapper>
   )
 }

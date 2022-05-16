@@ -29,7 +29,7 @@ export default function Home({ about, techStack, services, reviews, projects, bl
         <About data={about} />
         <Services data={services} />
         {techStack && <TechStack data={techStack} />}
-        <Projects data={projects} />
+        {/* <Projects data={projects} /> */}
         <Testimonials data={reviews} />
         <Blogs data={blogs} />
       </Layout>

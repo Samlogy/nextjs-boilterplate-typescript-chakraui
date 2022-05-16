@@ -22,7 +22,7 @@ const Hero = () => {
         w={['30rem', '', '25rem', '']}
       >
         <Heading mb="2rem">
-          Agence de développement{' '}
+          {t.hero.title}{' '}
           <Box as="span" color="accent_4">
             <TypeWritter loop={true} speed={100} delay={1500} words={['Web', 'Mobile.']} />
           </Box>
