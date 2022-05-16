@@ -3,7 +3,6 @@ body {
   scroll-behavior: smooth;
 }
 
-
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: 0.6rem;
@@ -30,16 +29,13 @@ select.select-language option {
 select.select-language:hover {
   cursor: pointer;
 }
-/* select language dark mode */
 select.select-language:hover.dark {
   cursor: pointer;
   background-color: #2d3748;
   color: white;
 }
 
-.post-link:hover {
-  cursor: pointer;
-}
+/*=============== call-to-action ===============*/
 .call-to-action-link {
   background-color: #38a169;
   padding: .5rem;

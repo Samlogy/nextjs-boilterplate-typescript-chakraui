@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import {
-  //   About,
-  //   Blogs,
-  //   Hero,
+  // About,
+  // Blogs,
+  // Hero,
   Layout
-  //   Projects,
-  //   Services,
-  //   TechStack,
-  //   Testimonials
+  // Projects,
+  // Services,
+  // TechStack,
+  // Testimonials
 } from '../components'
 import { GET_HOME_DATA } from '../lib/services'
 
