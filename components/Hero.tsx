@@ -21,9 +21,9 @@ const Hero = () => {
         justifyContent={'center'}
         w={['30rem', '', '25rem', '']}
       >
-        <Heading mb="2rem">
+        <Heading as="h1" mb="2rem" h="4rem">
           {t.hero.title}{' '}
-          <Box as="span" color="accent_4">
+          <Box as="span" color="accent_3">
             <TypeWritter loop={true} speed={100} delay={1500} words={['Web', 'Mobile.']} />
           </Box>
         </Heading>
@@ -33,14 +33,14 @@ const Hero = () => {
           alignItems={['center', 'none']}
           ml={['0', '', '2rem', '']}
         >
-          <Button w="fit-content" bg="accent_4" color="white" _hover={{ bg: 'accent_5' }}>
+          <Button w="fit-content" bg="accent_3" color="white" _hover={{ bg: 'accent_5' }}>
             {t.hero.ask_estimate}
           </Button>
 
           <Button
             w="fit-content"
             mt={['1rem', '0rem']}
-            bg="accent_4"
+            bg="accent_3"
             color="white"
             _hover={{ bg: 'accent_5', textDecor: 'none' }}
             ml={['0rem', '1rem']}

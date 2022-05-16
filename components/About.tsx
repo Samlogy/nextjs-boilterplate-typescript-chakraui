@@ -15,13 +15,13 @@ const About = ({ data }: { data: any }) => {
           w={['80%', '', '40%', '']}
           mt={['1.5rem', '', '0rem', '']}
         >
-          <Heading fontSize="1.8rem" fontWeight="700" mb="1rem" color="accent_4">
+          <Heading fontSize="1.8rem" fontWeight="700" mb="1rem" color="accent_3">
             {data?.title}
           </Heading>
 
           <Flex flexDir={'column'} lineHeight="1.5rem">
             {data?.text.map((el, idx) => (
-              <Text key={idx} fontSize=".9rem" color="gray.500" mb={'1rem'}>
+              <Text key={idx} fontSize=".9rem" color="gray_3" mb={'1rem'}>
                 {el}
               </Text>
             ))}

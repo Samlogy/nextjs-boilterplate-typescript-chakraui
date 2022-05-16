@@ -30,7 +30,7 @@ const BackTop = () => {
           aria-label="scroll-top"
           icon={<FaArrowUp size={20} color="white" />}
           onClick={scrollToTop}
-          bg="accent_4"
+          bg="accent_3"
           _hover={{ bg: 'accent_5', cursor: 'pointer' }}
           position="fixed"
           right="20px"

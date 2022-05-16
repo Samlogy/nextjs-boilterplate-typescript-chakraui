@@ -26,21 +26,21 @@ export default function Blog({ blog }) {
         <ScrollProgressIndicator />
         <Image src={blog?.image} mx="auto" w="full" h="20rem" mb="2rem" alt="blog-image" />
 
-        <Heading fontSize="2rem" fontWeight={'600'} color={'accent_4'} mb="2rem">
+        <Heading fontSize="2rem" fontWeight={'600'} color={'accent_3'} mb="2rem">
           {blog?.title}
         </Heading>
 
         <Flex justify={'flex-start'} alignItems={'center'}>
           <Flex m="1rem 0 1.5rem 0">
-            <MdDateRange size={17} color={'#38a169'} />
-            <Box as="span" fontSize=".8rem" ml=".2rem" color={'gray_4'}>
+            <MdDateRange size={18} color={'#38a169'} />
+            <Box as="span" fontSize=".8rem" ml=".25rem" color={'gray_3'}>
               {blog?.createdAt}
             </Box>
           </Flex>
 
           <Flex m="1rem 0 1.5rem 1rem">
             <FaUserAlt size={14} color={'#38a169'} />
-            <Box as="span" fontSize=".8rem" ml=".2rem" color={'gray_4'}>
+            <Box as="span" fontSize=".8rem" ml=".25rem" color={'gray_3'}>
               {blog?.author}
             </Box>
           </Flex>

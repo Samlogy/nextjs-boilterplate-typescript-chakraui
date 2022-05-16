@@ -1,17 +1,17 @@
 const API_URL = 'http://localhost:3000/api'
 
 export const request = async (method: string, route: string, data?: any, headers = {}) => {
-  // const token = await getToken();
-
-  let res = await fetch(API_URL + route, {
+  let response = await fetch(API_URL + route, {
     method: method,
     body: data,
     headers: {
       Accept: 'application/json',
       'Content-Type': 'application/json',
+      'Accept-Language': 'fr',
+      //   Authorization: token ? `Bearer ${token}` : undefined,
       ...headers
     }
   })
-  res = await res.json()
-  return res
+  response = await response.json()
+  return response
 }

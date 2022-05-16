@@ -32,10 +32,10 @@ const Services = ({ data }: { data: any }) => {
                   {service?.title}
                 </Text>
                 <Image src={service?.image} boxSize={['135px', '', '', '']} alt="service-image" />
-                <Text fontSize=".9rem" mb=".75rem" textAlign={'center'} color={'gray_4'}>
+                <Text fontSize=".9rem" mb=".75rem" textAlign={'center'} color={'gray_3'}>
                   {service?.description}
                 </Text>
-                <Text fontWeight={'bold'} color={'accent_4'}>
+                <Text fontWeight={'bold'} color={'accent_3'}>
                   Learn More
                 </Text>
               </Flex>

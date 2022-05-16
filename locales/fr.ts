@@ -49,7 +49,7 @@ const fr = {
     description:
       "Si vous avez des questions, ou d'autres demandes, n'hésitez pas à nous contacter ! Nous sommes toujours heureux d'avoir de vos nouvelles!",
     name: 'Votre nom',
-    company: 'entreprise',
+    company: 'Entreprise',
     email: 'Adresse mail',
     phone: 'Numéro de téléphone',
     message: 'Message',

@@ -21,7 +21,7 @@ const PageTemplate = ({
   return (
     <Layout isHeaderVisible isFooterVisible>
       <Flex flexDir="column" justifyContent={'center'} alignItems={'center'}>
-        <Heading fontSize="2rem" color={'accent_4'} textTransform="uppercase" m="2rem 0 2.5rem 0">
+        <Heading fontSize="2rem" color={'accent_3'} textTransform="uppercase" m="2rem 0 2.5rem 0">
           {title}
         </Heading>
         <Flex {...rest}>{children}</Flex>

@@ -48,13 +48,13 @@ const Review = ({ data }: { data: any }) => {
         my=".75rem"
         bg={'transparent'}
         border="2px solid"
-        borderColor={'accent_4'}
+        borderColor={'accent_3'}
         p=".25rem"
       />
       <Text fontSize=".9rem" textTransform={'uppercase'} fontWeight="600">
         {data.name}
       </Text>
-      <Text fontSize=".9rem" textTransform={'uppercase'} fontStyle={'italic'} color={'#aaa'}>
+      <Text fontSize=".9rem" color="gray_3" textTransform={'uppercase'} fontStyle={'italic'}>
         {data.position}
       </Text>
     </Flex>

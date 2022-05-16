@@ -1,7 +1,7 @@
 import React from 'react'
 import { Divider, Flex, Heading, Image, Text, Button } from '@chakra-ui/react'
 import Link from 'next/link'
-import { PageTemplate } from '../components'
+import { PageTemplate, CallToAction } from '../components'
 import { useWindowDimensions, useLocale } from '../lib/hooks'
 import { GET_HOME_DATA } from '../lib/services'
 
@@ -44,9 +44,10 @@ const Service = ({ data }: { data: any }) => {
           {data?.text}
         </Text>
 
-        <Button bg={'accent_4'} color={'white'} _hover={{ bg: 'accent_5' }} mt="2rem" w="15rem">
+        {/* <Button bg={'accent_4'} color={'white'} _hover={{ bg: 'accent_5' }} mt="2rem" w="15rem">
           <Link href="#contact"> Start yout business now ! </Link>
-        </Button>
+        </Button> */}
+        <CallToAction justify={'flex-start'} />
 
         <Divider
           w="5rem"

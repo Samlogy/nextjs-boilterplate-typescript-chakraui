@@ -1,4 +1,4 @@
-import { request } from './http'
+import { request } from './_http'
 
 export async function GET_HOME_DATA() {
   try {

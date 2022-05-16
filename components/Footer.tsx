@@ -75,14 +75,14 @@ export default function Footer() {
         >
           <Text fontSize=".8rem"> © 2022 Sam Solutions. {t.footer.rights} </Text>
           <Flex>
-            <Box color="accent_4" fontSize=".8rem">
-              <Link href="/conditions"> Conditions and terms </Link>{' '}
+            <Box color="accent_1" fontSize=".8rem">
+              <Link href="/conditions">{t.footer.conditions}</Link>
             </Box>
             <Text mx=".5rem" fontSize=".8rem">
-              |{' '}
+              |
             </Text>
-            <Box color="accent_4" fontSize=".8rem">
-              <Link href="/privacy"> Privacy </Link>{' '}
+            <Box color="accent_1" fontSize=".8rem">
+              <Link href="/privacy">{t.footer.privacy}</Link>
             </Box>
           </Flex>
         </Container>
@@ -139,7 +139,7 @@ const Subscribe = () => {
         w="15rem"
       >
         <form onSubmit={handleSubmit(onSubscribe)} style={{ display: 'flex' }}>
-          <FormControl id="name">
+          <FormControl id="sub-email">
             <Input
               type="text"
               isInvalid={errors.email ? true : false}
@@ -157,7 +157,7 @@ const Subscribe = () => {
           </FormControl>
           <Button
             type="submit"
-            bg="accent_4"
+            bg="accent_3"
             fontSize={'.9rem'}
             color="white"
             borderRadius={'10px'}
@@ -171,10 +171,11 @@ const Subscribe = () => {
   )
 }
 const SocialMedia = () => {
+  const { t } = useLocale()
   return (
     <Flex flexDir={'column'} mb="1rem">
       <Heading size=".8rem" mb=".5rem" color="accent_2">
-        Reach us on
+        {t.footer.reach}
       </Heading>
       <Flex
         flexDir={'row'}

@@ -130,7 +130,7 @@ const NavBarContainer = ({ children }: INavBarContainer) => {
       wrap="wrap"
       w="100%"
       p={'1rem'}
-      bg={'accent_4'}
+      bg={'accent_3'}
       color={['white', 'white', 'primary.700', 'primary.700']}
       boxShadow={'md'}
     >

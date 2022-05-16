@@ -12,6 +12,7 @@ const SectionWrapper = ({ children, title, description, ...restPorps }: ISection
     <Flex flexDir="column" p="4rem 1.5rem" {...restPorps}>
       <Box textAlign={'center'}>
         <Heading
+          as="h2"
           fontSize="24px"
           mb="1rem"
           textTransform="uppercase"
@@ -23,9 +24,9 @@ const SectionWrapper = ({ children, title, description, ...restPorps }: ISection
         </Heading>
         <Divider
           w="10rem"
-          borderColor="accent_4"
+          borderColor="accent_3"
           borderWidth="2px"
-          bg="accent_4"
+          bg="accent_3"
           borderRadius={'10px'}
           m="0 auto 1rem auto"
         />

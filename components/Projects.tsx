@@ -37,7 +37,7 @@ const Projects = ({ data }: { data: any }) => {
                 <Text fontSize=".9rem" mb=".75rem" textAlign={'left'}>
                   {service.app}{' '}
                 </Text>
-                <Text fontWeight={'bold'} color={'accent_4'} textAlign="center">
+                <Text fontWeight={'bold'} color={'accent_3'} textAlign="center">
                   Learn More
                 </Text>
               </Flex>

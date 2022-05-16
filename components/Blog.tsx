@@ -23,14 +23,14 @@ const Blog = ({ data }: { data: any }) => {
           <Flex justify={'space-between'} alignItems={'center'}>
             <Flex m="1rem 0 1.5rem 0">
               <MdDateRange size={17} color={'#38a169'} />
-              <Box as="span" fontSize=".8rem" ml=".2rem" color={'gray_4'}>
+              <Box as="span" fontSize=".8rem" ml=".2rem" color={'gray_3'}>
                 {data.createdAt}
               </Box>
             </Flex>
 
             <Flex m="1rem 0 1.5rem 0">
               <FaUserAlt size={14} color={'#38a169'} />
-              <Box as="span" fontSize=".8rem" ml=".2rem" color={'gray_4'}>
+              <Box as="span" fontSize=".8rem" ml=".2rem" color={'gray_3'}>
                 {data.author}
               </Box>
             </Flex>
@@ -45,10 +45,10 @@ const Blog = ({ data }: { data: any }) => {
           >
             {data.title}
           </Text>
-          <Text fontSize=".9rem" mb=".75rem" color={'gray_4'} isTruncated>
+          <Text fontSize=".9rem" mb=".75rem" color={'gray_3'} isTruncated>
             {data.text}
           </Text>
-          <Text fontWeight={'bold'} color={'accent_4'} textAlign="center">
+          <Text fontWeight={'bold'} color={'accent_3'} textAlign="center">
             {t.globals.learn_more}
           </Text>
         </Flex>
