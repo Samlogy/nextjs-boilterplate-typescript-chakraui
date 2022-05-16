@@ -9,7 +9,9 @@ function CallToAction() {
   return (
     <Flex justify={'center'} align="center" mt="2rem">
       <Button bg={'accent_3'} color={'white'} _hover={{ bg: 'accent_5' }}>
-        <Link href="#contact">voila </Link>
+        <Link href="#contact">
+          <a>{t.globals.call_to_action}</a>
+        </Link>
       </Button>
     </Flex>
   )
