@@ -7,7 +7,7 @@ export default function Document() {
       <Head>
         {/* improve seo / accessibility */}
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
-        {/* pwa headers */}
+        {/* best pwa headers */}
         <meta name="application-name" content="PWA App" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -51,13 +51,7 @@ export default function Document() {
         <meta property="og:url" content="https://sam-solutions.com" />
         <meta property="og:image" content="https://sam-solutions.com/icons/apple-touch-icon.png" />
 
-        {/* font cdn */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-          rel="stylesheet"
-        />
+        {/* custom font cdn */}
       </Head>
       <body>
         <ColorModeScript />
