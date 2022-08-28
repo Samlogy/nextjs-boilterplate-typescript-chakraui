@@ -1,0 +1,35 @@
+import { Box, Divider, Flex, Heading } from '@chakra-ui/react'
+
+interface ISectionTemplate {
+  children: React.ReactNode
+  title: string
+  [restProps: string]: any
+}
+
+export default function SectionTemplate({ children, title, restProps }: ISectionTemplate) {
+  return (
+    <Flex flexDir="column" py="2.5rem" {...restProps}>
+      <Box textAlign={'center'}>
+        <Heading
+          fontSize="24px"
+          mb="1rem"
+          textTransform="uppercase"
+          w={['15rem', '20rem', '', '']}
+          mx="auto"
+          wordBreak={'keep-all'}
+        >
+          {title}
+        </Heading>
+        <Divider
+          w="10rem"
+          borderColor="accent_4"
+          borderWidth="2px"
+          bg="accent_4"
+          borderRadius={'10px'}
+          m="0 auto 1rem auto"
+        />
+      </Box>
+      {children}
+    </Flex>
+  )
+}
