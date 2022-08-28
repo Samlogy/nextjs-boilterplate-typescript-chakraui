@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import { useLocale } from '../lib/hooks'
 import { languages } from '../locales'
 
-const LanguageSwitcher = () => {
+export default function LanguageSwitcher() {
   const router = useRouter()
   const { colorMode: mode } = useColorMode()
   const { locale } = useLocale()
@@ -27,5 +27,3 @@ const LanguageSwitcher = () => {
     </select>
   )
 }
-
-export default LanguageSwitcher
