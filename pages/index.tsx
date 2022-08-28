@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Layout } from '../components'
+import { Layout, SectionTemplate } from '../components'
 // import { GET_HOME_DATA } from '../lib/services'
 
 export default function Home() {
